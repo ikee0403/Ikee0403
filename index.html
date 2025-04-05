@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>🩷Dear Rainne🩷</strong>
+                        <p>
+                        Conratulations!! to us for finishing another year bro hahahaha and you definitely deserve those awards.I understand that it can be difficult to meet the expectations that others have of us. This pressure can push us to our limits as we strive not to disappoint them. It can be stressful to feel that they have high expectations for you, especially when you feel like you may not be able to meet those expectations. I know the feeling well haha. I can only say is your doing great and amazing were still young so we still have a lot of time to improve and be better but for now just enjoy the moment that you accomplished something and make that feeling of enjoyment for you to strive to accomplish more feats in the future.         -Ikee
+                      
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
